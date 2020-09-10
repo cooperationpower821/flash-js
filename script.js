@@ -255,7 +255,7 @@ function allowDrop (ev) {
 
 function drag (ev) {
 	offsetX = ev.offsetX - ev.offsetX * offset;
-	offsetY = ev.offsetY;
+	offsetY = ev.offsetY - ev.offsetY * offset;
 	ev.dataTransfer.setData('rod_type', ev.target.getAttribute('type'));
 	ev.dataTransfer.setData('rod_direction', ev.target.getAttribute('direction'));
 	ev.dataTransfer.setData('rod_id', ev.target.getAttribute('id'));
@@ -264,7 +264,7 @@ function drag (ev) {
 //type: 11=player, 12=split, 13=merge_v, 14=merge_h
 function drag_player (ev) {
 	offsetX = ev.offsetX - ev.offsetX * offset;
-	offsetY = ev.offsetY;
+	offsetY = ev.offsetY - ev.offsetY * offset;
 	ev.dataTransfer.setData('rod_type', '1001');
 	ev.dataTransfer.setData('rod_player_id', 'rod_player_' + rod_num);
 	var clone_rod_player = ev.target.cloneNode(true);
@@ -275,17 +275,17 @@ function drag_player (ev) {
 }
 function drag_split (ev) {
 	offsetX = ev.offsetX - ev.offsetX * offset;
-	offsetY = ev.offsetY;
+	offsetY = ev.offsetY - ev.offsetY * offset;
 	ev.dataTransfer.setData('rod_type', '1002');
 }
 function drag_merge_v (ev) {
 	offsetX = ev.offsetX - ev.offsetX * offset;
-	offsetY = ev.offsetY;
+	offsetY = ev.offsetY - ev.offsetY * offset;
 	ev.dataTransfer.setData('rod_type', '1003');
 }
 function drag_merge_h (ev) {
 	offsetX = ev.offsetX - ev.offsetX * offset;
-	offsetY = ev.offsetY;
+	offsetY = ev.offsetY - ev.offsetY * offset;
 	ev.dataTransfer.setData('rod_type', '1004');
 
 }

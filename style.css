@@ -1,0 +1,106 @@
+.rod_player {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: blue;
+	cursor: pointer;
+}
+#rod_split {
+	position: absolute;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	background: url('img/split.png');
+	background-size: cover;
+}
+#rod_merge_v {
+	position: absolute;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	background: url('img/merge_v.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#rod_merge_h {
+	position: absolute;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	background: url('img/merge_h.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#main_rods {
+	float: left;
+	width: 300px;
+	margin: 20px;
+}
+#main_board {
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding: 20px;
+	width: 341px;
+	height: 341px;
+}
+#v_bar, #h_bar { position: absolute; z-index: 0; }
+#v_bar >div {
+	float: left;
+	height: 340px;
+}
+#v_bar >div:nth-child(even) {
+	width: 19px;
+}
+#v_bar >div:nth-child(odd) {
+	width: 1px;
+	background: grey;
+}
+#h_bar >div {
+	width: 340px;
+}
+#h_bar >div:nth-child(even) {
+	height: 19px;
+}
+#h_bar >div:nth-child(odd) {
+	height: 1px;
+	background: grey;
+}
+#h_rods >div {
+	height: 19px;
+	cursor: pointer;
+	margin-bottom: 3px;
+}
+#v_rods >div {
+	width: 19px;
+	cursor: pointer;
+	margin-right: 3px;
+	float: left;
+}
+.rod {
+	position: absolute;
+	background: grey;
+}
+.rod-0 { background: #fef8ba; }
+.rod-1 { background: #fc1605; }
+.rod-2 { background: #7cdb7f; }
+.rod-3 { background: #9c27b0; }
+.rod-4 { background: #ffeb3b; }
+.rod-5 { background: #2f8f33; }
+.rod-6 { background: #000000; }
+.rod-7 { background: #bc9110; }
+.rod-8 { background: #3f51b5; }
+.rod-9 { background: #f65e2f; }
+.description {
+	float: left;
+	width: 100%;
+}
+.description >p {
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 0;
+	font-family: system-ui;
+}

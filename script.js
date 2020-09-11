@@ -43,7 +43,8 @@ function playSounds (rod_ids) {
 		var type = document.getElementById(rod_ids[i]).getAttribute('type')
 		if (type < 10) {
 			var audio_id = "audio_" + type;
-			document.getElementById(audio_id).play();
+			var cln = document.getElementById(audio_id).cloneNode(true);
+			cln.play();
 		}
 	}
 }

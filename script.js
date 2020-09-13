@@ -22,7 +22,7 @@ drawGrid(17);
 
 var offset = 0;
 var isFirefox = typeof InstallTrigger !== 'undefined';
-if (!isFirefox) {
+if (!isFirefox && false) {
 	offset = 0.2;
 }
 

@@ -1,0 +1,26 @@
+{
+	"name": "falsh-js/appstarter",
+	"type": "project",
+	"description": "flash game",
+	"homepage": "",
+	"license": "MIT",
+	"require": {
+		"php": ">=7.2"
+	},
+	"require-dev": {
+		"fzaninotto/faker": "^1.9@dev",
+		"mikey179/vfsstream": "1.6.*",
+		"phpunit/phpunit": "^8.5"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\Support\\": "tests/_support"
+		}
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"@composer dump-autoload"
+		],
+		"test": "phpunit"
+	}
+}

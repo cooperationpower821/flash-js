@@ -4,16 +4,16 @@
 	<title>rods</title>
 </head>
 <body>
-	<audio id="audio_0" autoplay><source src="sounds/C1p.mp3" type="audio/wav"></audio>
-	<audio id="audio_1" autoplay><source src="sounds/D1p.mp3" type="audio/wav"></audio>
-	<audio id="audio_2" autoplay><source src="sounds/E1p.mp3" type="audio/wav"></audio>
-	<audio id="audio_3" autoplay><source src="sounds/F1p.mp3" type="audio/wav"></audio>
-	<audio id="audio_4" autoplay><source src="sounds/G1p.mp3" type="audio/wav"></audio>
-	<audio id="audio_5" autoplay><source src="sounds/A1p.mp3" type="audio/wav"></audio>
-	<audio id="audio_6" autoplay><source src="sounds/B1p.mp3" type="audio/wav"></audio>
-	<audio id="audio_7" autoplay><source src="sounds/C2p.mp3" type="audio/wav"></audio>
-	<audio id="audio_8" autoplay><source src="sounds/D2p.mp3" type="audio/wav"></audio>
-	<audio id="audio_9" autoplay><source src="sounds/E2p.mp3" type="audio/wav"></audio>
+	<audio id="audio_0" autoplay><source src="sounds/C1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_1" autoplay><source src="sounds/D1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_2" autoplay><source src="sounds/E1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_3" autoplay><source src="sounds/F1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_4" autoplay><source src="sounds/G1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_5" autoplay><source src="sounds/A1p.png" type="audio/mp3"></audio>
+	<audio id="audio_6" autoplay><source src="sounds/B1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_7" autoplay><source src="sounds/C2p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_8" autoplay><source src="sounds/D2p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_9" autoplay><source src="sounds/E2p.mp3" type="audio/mp3"></audio>
 
 	<div id="main_rods" ondrop="drop(event)" ondragover="allowDrop(event)">
 		<div id="h_rods">

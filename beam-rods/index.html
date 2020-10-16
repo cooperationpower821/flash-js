@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>beam rods</title>
+</head>
+<body onmousemove="mousemove(event)", onmouseup="mouseup(event)">
+
+	<div id="main_rods" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<div id="v_rods">
+			<div class="rod-0" draggable="true" ondragstart="drag(event)" style="height:19px;" type="0"></div>
+			<div class="rod-1" draggable="true" ondragstart="drag(event)" style="height:39px;" type="1"></div>
+			<div class="rod-2" draggable="true" ondragstart="drag(event)" style="height:59px;" type="2"></div>
+			<div class="rod-3" draggable="true" ondragstart="drag(event)" style="height:79px;" type="3"></div>
+			<div class="rod-4" draggable="true" ondragstart="drag(event)" style="height:99px;" type="4"></div>
+			<div class="rod-5" draggable="true" ondragstart="drag(event)" style="height:119px;" type="5"></div>
+			<div class="rod-6" draggable="true" ondragstart="drag(event)" style="height:139px;" type="6"></div>
+			<div class="rod-7" draggable="true" ondragstart="drag(event)" style="height:159px;" type="7"></div>
+			<div class="rod-8" draggable="true" ondragstart="drag(event)" style="height:179px;" type="8"></div>
+			<div class="rod-9" draggable="true" ondragstart="drag(event)" style="height:199px;" type="9"></div>
+		</div>
+		<div id="hooks_bar">
+			<span>Hooks : </span>
+			<input type="text" name="" value="10">
+			<button onclick="setHooks()">OK</button>
+		</div>
+	</div>
+	<div id="main_board" ondrop="drop(event)" ondragover="preventDrop(event)">
+		<div id="beam_bar">
+			<div id="beam_h_bar"></div>
+			<div id="beam_v_bar">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div class="first_operator"></div>
+		<div class="second_operator"></div>
+		<div id="beam_ground"></div>
+		<div id="rods_container">
+			
+		</div>
+	</div>
+</body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</html>

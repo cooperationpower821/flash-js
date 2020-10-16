@@ -227,9 +227,9 @@ function drawRod (x, y, type, direction, id) {
 	rod_num++;
 	var rod_style =  'position:absolute;left:' + x + 'px;top:' + y + 'px;';
 	if (direction == 'h') {
-		rod_style = rod_style + "height:19px;width:" + (type * 20 + 20) + "px;";
+		rod_style = rod_style + "height:17px;width:" + (type * 20 + 20 - 2) + "px;";
 	} else {
-		rod_style = rod_style + "width:19px;height:" + (type * 20 + 20) + "px;";
+		rod_style = rod_style + "width:17px;height:" + (type * 20 + 20 - 2) + "px;";
 	}
 	if (id == null || id == "null") {
 		var new_rod = document.createElement('div');

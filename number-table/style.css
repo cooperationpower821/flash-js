@@ -1,0 +1,88 @@
+html, input, span, div, a, button {
+	font-family: cursive;
+	user-select: none;
+}
+html { height: 100%; }
+body { min-height: calc(100% - 16px) }
+input { width: 30px; }
+#h_ruler {
+	width: 100%;
+	overflow: hidden;
+	height: 30px;
+	position: absolute;
+	top: -30px;
+}
+#h_ruler >div {
+	width: 40px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+#v_ruler {
+	overflow: hidden;
+	width: 40px;
+	height: 100%;
+	position: absolute;
+	left: -40px;
+}
+#v_ruler >div {
+	height: 40px;
+}
+#v_ruler >div >span {
+	line-height: 40px;
+	font-weight: bold;
+}
+#main_board_container {
+	position: relative;
+	width: 700px;
+	height: 280px;
+	margin-top: 50px;
+	margin-left: 50px;
+	border: 6px solid #F44336;
+	border-radius: 3px;
+}
+#main_board {
+	overflow: hidden;
+	padding: 1px;
+}
+#main_board >div {
+	width: 38px;
+	height: 38px;
+	border: 1px solid #2e4a57;
+	background: white;
+	float: left;
+	text-align: center;
+}
+#main_board >div >span {
+	line-height: 40px;
+	font-weight: bold;
+}
+#total { background: white; }
+#count1 { background: #03A9F4; }
+#count2 { background: yellow; }
+#show { background: #cd72dd; }
+#main_tool {
+	padding: 25px 0 0 25px;
+}
+button { margin-left: 20px; }
+#resizer {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #f68460;
+	position: absolute;
+	bottom: -13px;
+	right: -13px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px 1px #795548;
+}
+.clip.active {
+	border-color: #d900ff !important;
+    box-shadow: 0px 0px 0px 1px #d900ff;
+	position: relative;
+	border-radius: 3px;
+}
+.clip.show >span .clip.active >span {
+	display: block;
+}

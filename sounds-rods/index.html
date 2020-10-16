@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rods</title>
+</head>
+<body>
+	<audio id="audio_0" autoplay><source src="sounds/C1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_1" autoplay><source src="sounds/D1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_2" autoplay><source src="sounds/E1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_3" autoplay><source src="sounds/F1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_4" autoplay><source src="sounds/G1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_5" autoplay><source src="sounds/A1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_6" autoplay><source src="sounds/B1p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_7" autoplay><source src="sounds/C2p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_8" autoplay><source src="sounds/D2p.mp3" type="audio/mp3"></audio>
+	<audio id="audio_9" autoplay><source src="sounds/E2p.mp3" type="audio/mp3"></audio>
+
+	<div id="main_rods" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<div id="h_rods">
+			<div class="rod-0" draggable="true" ondragstart="drag(event)" style="width:17px;height:17px;" type="0" direction="h"></div>
+			<div class="rod-1" draggable="true" ondragstart="drag(event)" style="width:37px;height:17px;" type="1" direction="h"></div>
+			<div class="rod-2" draggable="true" ondragstart="drag(event)" style="width:57px;height:17px;" type="2" direction="h"></div>
+			<div class="rod-3" draggable="true" ondragstart="drag(event)" style="width:77px;height:17px;" type="3" direction="h"></div>
+			<div class="rod-4" draggable="true" ondragstart="drag(event)" style="width:97px;height:17px;" type="4" direction="h"></div>
+			<div class="rod-5" draggable="true" ondragstart="drag(event)" style="width:117px;height:17px;" type="5" direction="h"></div>
+			<div class="rod-6" draggable="true" ondragstart="drag(event)" style="width:137px;height:17px;" type="6" direction="h"></div>
+			<div class="rod-7" draggable="true" ondragstart="drag(event)" style="width:157px;height:17px;" type="7" direction="h"></div>
+			<div class="rod-8" draggable="true" ondragstart="drag(event)" style="width:177px;height:17px;" type="8" direction="h"></div>
+			<div class="rod-9" draggable="true" ondragstart="drag(event)" style="width:197px;height:17px;" type="9" direction="h"></div>
+		</div>
+		<div id="v_rods">
+			<div class="rod-0" draggable="true" ondragstart="drag(event)" style="width:17px;height:17px;" type="0" direction="v"></div>
+			<div class="rod-1" draggable="true" ondragstart="drag(event)" style="width:17px;height:37px;" type="1" direction="v"></div>
+			<div class="rod-2" draggable="true" ondragstart="drag(event)" style="width:17px;height:57px;" type="2" direction="v"></div>
+			<div class="rod-3" draggable="true" ondragstart="drag(event)" style="width:17px;height:77px;" type="3" direction="v"></div>
+			<div class="rod-4" draggable="true" ondragstart="drag(event)" style="width:17px;height:97px;" type="4" direction="v"></div>
+			<div class="rod-5" draggable="true" ondragstart="drag(event)" style="width:17px;height:117px;" type="5" direction="v"></div>
+			<div class="rod-6" draggable="true" ondragstart="drag(event)" style="width:17px;height:137px;" type="6" direction="v"></div>
+			<div class="rod-7" draggable="true" ondragstart="drag(event)" style="width:17px;height:157px;" type="7" direction="v"></div>
+			<div class="rod-8" draggable="true" ondragstart="drag(event)" style="width:17px;height:177px;" type="8" direction="v"></div>
+			<div class="rod-9" draggable="true" ondragstart="drag(event)" style="width:17px;height:197px;" type="9" direction="v"></div>
+		</div>
+		<div class="rod_player" style="left:200px;top:140px;" draggable="true" ondragstart="drag_player(event)"></div>
+		<div id="rod_merge_v" style="left:200px;top:110px;" draggable="true" ondragstart="drag_merge_v(event)"></div>
+		<div id="rod_merge_h" style="left:200px;top:80px;" draggable="true" ondragstart="drag_merge_h(event)"></div>
+		<div id="rod_split" style="left:200px;top:50px;" draggable="true" ondragstart="drag_split(event)"></div>
+	</div>
+	<div id="main_board" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<div id="v_bar"></div>
+		<div id="h_bar"></div>
+	</div>
+	<div class="description">
+		<p>Drag the rods onto the grid to add them. </p>
+		<p>Drag a rod from the grid to the left of the grid to erase it.</p>
+		<p>Drop the chisel icon on a rod to break it.</p>
+		<p>Drop eiher the vertical or horizontal glue icon on two adjacent rods to join them.</p>
+		<p>Drop the ball above some rods to create Xylophone(speakers on please).</p>
+	</div>
+</body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</html>

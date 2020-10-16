@@ -70,19 +70,22 @@
 	background: grey;
 }
 #h_rods >div {
-	height: 19px;
+	height: 17px;
 	cursor: pointer;
 	margin-bottom: 3px;
+	border: 1px solid;
 }
 #v_rods >div {
-	width: 19px;
+	width: 17px;
 	cursor: pointer;
 	margin-right: 3px;
 	float: left;
+	border: 1px solid;
 }
 .rod {
 	position: absolute;
 	background: grey;
+	border: 1px solid;
 }
 .rod-0 { background: #fef8ba; }
 .rod-1 { background: #fc1605; }

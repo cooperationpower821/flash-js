@@ -1,0 +1,111 @@
+
+html, body, #main_container {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#main_board {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.rod {
+	width:10px;
+	height: 50px;
+	position: absolute;
+	background: grey;
+	box-shadow: 1px 1px 1px grey;
+	border: 1px solid;
+	cursor: pointer;
+	user-select: none;
+}
+input {
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+	width: 50px;
+}
+.rod_0 {
+	height:128px;left:500px;top:200px;background: #f65e2f;
+}
+.rod_1 {
+	height:58px;left:500px;top:140px;background: #ffeb3b;
+}
+.rod_2 {
+	height:88px;left:470px;top:200px;background: #000000;
+}
+.rod_3 {
+	height:78px;left:470px;top:290px;background: #2f8f33;
+}
+.rod_4 {
+	height:38px;left:470px;top:370px;background: #7cdb7f;
+}
+.rod_5 {
+	height:88px;left:530px;top:200px;background: #000000;
+}
+.rod_6 {
+	height:78px;left:530px;top:290px;background: #2f8f33;
+}
+.rod_7 {
+	height:38px;left:530px;top:370px;background: #7cdb7f;
+}
+.rod_8 {
+	height:98px;left:530px;top:330px;background: #3f51b5;
+}
+.rod_9 {
+	height:98px;left:530px;top:430px;background: #bc9110;
+}
+.rod_10 {
+	height:58px;left:530px;top:530px;background: #9c27b0;
+}
+.rod_11 {
+	height:98px;left:470px;top:330px;background: #3f51b5;
+}
+.rod_12 {
+	height:98px;left:470px;top:430px;background: #bc9110;
+}
+.rod_13 {
+	height:58px;left:470px;top:530px;background: #9c27b0;
+}
+#rod_0 {
+	transform-origin:505px 330px;transform:rotate(0deg);
+}
+#rod_1 {
+	transform-origin:505px 200px;transform:rotate(0deg);
+}
+#rod_2 {
+	transform-origin:475px 200px;transform:rotate(45deg);
+}
+#rod_3 {
+	transform-origin:475px 290px;transform:rotate(30deg);
+}
+#rod_4 {
+	transform-origin:475px 370px;transform:rotate(-25deg);
+}
+#rod_5 {
+	transform-origin:535px 200px;transform:rotate(-45deg);
+}
+#rod_6 {
+	transform-origin:535px 290px;transform:rotate(-30deg);
+}
+#rod_7 {
+	transform-origin:535px 370px;transform:rotate(25deg);
+}
+#rod_8 {
+	transform-origin:535px 330px;transform:rotate(-45deg);
+}
+#rod_9 {
+	transform-origin:535px 430px;transform:rotate(20deg);
+}
+#rod_10 {
+	transform-origin:535px 530px;transform:rotate(-30deg);
+}
+#rod_11 {
+	transform-origin:475px 330px;transform:rotate(45deg);
+}
+#rod_12 {
+	transform-origin:475px 430px;transform:rotate(-20deg);
+}
+#rod_13 {
+	transform-origin:475px 530px;transform:rotate(30deg);
+}

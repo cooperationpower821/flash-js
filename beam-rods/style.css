@@ -1,0 +1,114 @@
+#main_rods {
+	float: left;
+	width: 300px;
+	margin: 20px;
+}
+#main_board {
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding: 20px;
+	width: 600px;
+	height: 400px;
+}
+#v_rods >div {
+	width: 17px;
+	border: 1px solid;
+	cursor: pointer;
+	margin-right: 3px;
+	float: left;
+	box-shadow: 1px 1px 1px grey;
+}
+.rod {
+	position: absolute;
+	background: grey;
+	box-shadow: 1px 1px 1px grey;
+	border: 1px solid;
+	cursor: pointer;
+	user-select: none;
+}
+.rod-0 { background: #fef8ba; }
+.rod-1 { background: #fc1605; }
+.rod-2 { background: #7cdb7f; }
+.rod-3 { background: #9c27b0; }
+.rod-4 { background: #ffeb3b; }
+.rod-5 { background: #2f8f33; }
+.rod-6 { background: #000000; }
+.rod-7 { background: #bc9110; }
+.rod-8 { background: #3f51b5; }
+.rod-9 { background: #f65e2f; }
+
+#beam_ground {
+	position: absolute;
+    left: 280px;
+    top: 35px;
+    width: 0px;
+    height: 0px;
+    border-width: 40px;
+    border-bottom-color: #667cf6 !important;
+    border-style: solid;
+    border-color: transparent;
+    transform: rotateY(70deg);
+}
+.first_operator {
+	position: absolute;
+    left: 305px;
+    top: 30px;
+    width: 30px;
+	height: 3px;
+	background: #667cf6;
+	transition:all .2s ease-in-out
+}
+.second_operator {
+	position: absolute;
+    left: 305px;
+    top: 38px;
+    width: 30px;
+	height: 3px;
+	background: #667cf6;
+	transition:all .2s ease-in-out
+}
+.big ~.first_operator {
+	transform: rotate(15deg);
+}
+.big ~.second_operator {
+	transform: rotate(-16deg);
+}
+.small ~.first_operator {
+	transform: rotate(-15deg);
+}
+.small ~.second_operator {
+	transform: rotate(16deg);
+}
+#beam_bar {
+	position: relative;
+	margin-top: 50px;
+}
+#beam_bar.small { transform: rotate(8deg) }
+#beam_bar.big { transform: rotate(-8deg) }
+#beam_bar.equal { transform: rotate(0deg) }
+#beam_h_bar {
+	width: 100%;
+	height: 5px;
+	background: grey;
+}
+#beam_v_bar {
+	
+}
+#beam_v_bar >div {
+	position: absolute;
+	width: 10px;
+	height: 30px;
+	background: grey;
+	top: -15px;
+	box-shadow: 1px 1px 1px grey;
+}
+#hooks_bar {
+	float: left;
+    margin-top: 30px;
+    font-family: system-ui;
+}
+input {
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+	width: 50px;
+}

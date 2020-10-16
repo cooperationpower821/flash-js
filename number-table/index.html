@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>number table</title>
+</head>
+<body onmousemove="mousemove(event)", onmouseup="mouseup(event)">
+	<audio id="audio_1" autoplay><source src="sounds/C2P.mp3" type="audio/mp3"></audio>
+	<audio id="audio_2" autoplay><source src="sounds/E2P.mp3" type="audio/mp3"></audio>
+
+	<div id="main_tool">
+		<div>
+			<span>Total : </span>
+			<input type="text" value="100" id="total" oninput="input(event, 'total')">
+			<span>SkipCount1 : </span>
+			<input type="text" id="count1" oninput="input(event, 'count1')">
+			<span>SkipCount2 : </span>
+			<input type="text" id="count2" oninput="input(event, 'count2')">
+			<input type="text" id="both" value="Both" style="margin:0 10px;background:#4caf50;color:black" disabled>
+			<span>% to show : </span>
+			<input type="text" id="show" value="100" oninput="input(event, 'show')">
+			<span>Speed : </span>
+			<input type="text" id="speed" value="5" oninput="input(event, 'speed')">
+			<button onclick="start()">start</button>
+			<button onclick="stop()">stop</button>
+		</div>
+	</div>
+
+	<div id="main_board_container">
+		<div id="ruler">
+			<div id="h_ruler"></div>
+			<div id="v_ruler"></div>
+		</div>
+		<div id="main_board"></div>
+		<div id="resizer" onmousedown="mousedown(event)"></div>
+	</div>
+
+</body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</html>

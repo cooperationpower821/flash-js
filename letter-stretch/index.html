@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>letter stretch</title>
+</head>
+<body onkeydown="keyDown(event)">
+
+<style type="text/css">
+html, body, div, h2, p {
+	font-family: sans-serif;
+}
+#container2 {
+	border: 1px solid grey;
+	margin: 5px;
+}
+
+</style>
+<div style="position: relative; overflow: hidden; padding: 0 20px">
+	<div style="float: left;">
+		<h2>Letter Stretch</h2>
+	</div>
+	<div style="float: left;">
+		<p>
+			Click once on the screen. Type any letter to place it on the screen. Move it by dragging the green handle. Change its shape by dragging any blue handle. Press the space bar to show or hide the handles. To print, right click and choose the print command from the menu.
+		</p>
+	</div>
+</div>
+<div id="container2"></div>
+
+<script src="konva.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

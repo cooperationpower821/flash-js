@@ -3,6 +3,7 @@ count1 = '';
 count2 = '';
 show = 100;
 speed = 5;
+type = 'number';
 
 function drawRuler () {
 	document.getElementById('h_ruler').innerHTML = "";
@@ -39,7 +40,17 @@ function drawMain (method) {
 			var div = document.createElement('div');
 			if (Math.random() * 100 < Number(show)) {
 				var span = document.createElement('span');
-				span.innerHTML = i;
+				var x = document.getElementById('main_board_container').getAttribute('x');
+				x = Number(x);
+				if (type == 'plus') {
+					console.log(x)
+					span.innerHTML = Math.floor((i-1)/x)+((i-1)%x+1)+1;
+				} else if (type == 'times') {
+					span.innerHTML = (Math.floor((i-1)/x)+1)*((i-1)%x+1);
+				} else {
+					span.innerHTML = i;
+				}
+				
 				div.appendChild(span);
 			}
 			if (Number(count1) > 0 && (i % Number(count1) == 0) && Number(count2) > 0 && (i % Number(count2) == 0)) {
@@ -175,10 +186,27 @@ function mousedown (ev) {
 }
 function mousemove(ev) {
 	if (dragging) {
-		var str = 'width:' + (ev.pageX-64) + 'px;height:' + (ev.pageY-114) + 'px;';
+		var width = ev.pageX-64;
+		var str = 'width:' + width + 'px;height:' + (ev.pageY-114) + 'px;';
 		document.getElementById('main_board_container').setAttribute('style', str);
+
+		var current_x = document.getElementById('main_board_container').getAttribute('x');
+		var x = Math.floor((width - 2) / 40);
+		if (current_x != x) {
+			document.getElementById('main_board_container').setAttribute('x', x);
+			drawMain();
+		}
 	}
 }
 function mouseup(ev) {
 	dragging = false;
+}
+
+var rad = document.getElementsByClassName('radio_type');
+var prev = null;
+for (var i = 0; i < rad.length; i++) {
+    rad[i].addEventListener('change', function() {
+        type = this.value;
+        drawMain();
+    });
 }

@@ -20,12 +20,20 @@
 			<input type="text" id="show" value="100" oninput="input(event, 'show')">
 			<span>Speed : </span>
 			<input type="text" id="speed" value="5" oninput="input(event, 'speed')">
+
+			<input type="radio" class="radio_type" id="number" name="type" value="number" checked>
+			<label for="male">1,2,3..</label>
+			<input type="radio" class="radio_type" id="plus" name="type" value="plus">
+			<label for="male">Plus</label>
+			<input type="radio" class="radio_type" id="times" name="type" value="times">
+			<label for="female">Times</label>
+
 			<button onclick="start()">start</button>
 			<button onclick="stop()">stop</button>
 		</div>
 	</div>
 
-	<div id="main_board_container">
+	<div id="main_board_container" x='17'>
 		<div id="ruler">
 			<div id="h_ruler"></div>
 			<div id="v_ruler"></div>

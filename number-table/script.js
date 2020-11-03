@@ -36,14 +36,22 @@ function drawMain (method) {
 		}
 	} else {
 		document.getElementById('main_board').innerHTML = "";
-		for (var i = 1; i <= Number(total); i++) {
+		show = Number(show); total = Number(total);
+		var hide_num = (100 - show) * total / 100;
+		var hide_index = [];
+		while (hide_num > hide_index.length) {
+			var index = Math.floor(Math.random()*total)+1;
+			if (!hide_index.includes(index)) hide_index.push(index)
+			console.log(hide_index)
+		}
+		for (var i = 1; i <= total; i++) {
 			var div = document.createElement('div');
-			if (Math.random() * 100 < Number(show)) {
+			// if (Math.random() * 100 < show) {
+			if (!hide_index.includes(i)) {
 				var span = document.createElement('span');
 				var x = document.getElementById('main_board_container').getAttribute('x');
 				x = Number(x);
 				if (type == 'plus') {
-					console.log(x)
 					span.innerHTML = Math.floor((i-1)/x)+((i-1)%x+1)+1;
 				} else if (type == 'times') {
 					span.innerHTML = (Math.floor((i-1)/x)+1)*((i-1)%x+1);

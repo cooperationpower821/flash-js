@@ -42,7 +42,7 @@ function drawMain (method) {
 		while (hide_num > hide_index.length) {
 			var index = Math.floor(Math.random()*total)+1;
 			if (!hide_index.includes(index)) hide_index.push(index)
-			console.log(hide_index)
+			// console.log(hide_index)
 		}
 		for (var i = 1; i <= total; i++) {
 			var div = document.createElement('div');
